@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/pokedex_aba.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>MyPokedex</title>
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pokemons">Pokemons</a></li>
+            <li><a href="#myPokedex">My Pokedex</a></li>
+        </ul>
+
+        <div id="login">
+            <form>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario">
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+                
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+    </nav>
+    
+    <section class="container">
+
+        <div class="busca">
+
+            <h1 class="titulo"> My Pokedex</h1>
+            <form class="input__form" id="frm">
+
+                <p>Nome do Pokemon: <input type="text" id="inPokemon"></p>
+                <input class="input__button" type="submit" value="Mostar pokemon" id="submit">
+
+            </form>
+            <button id="pokemonAnterior" class="input__button" onclick="pokemonAnterior()">Pokemon anterior</button>
+            <button id="proximoPokemon" class="input__button" onclick="proximoPokemon()">Proximo Pokemon</button>
+
+        </div>
+
+        <div class="respota">
+
+            <h2 id="resposta"></h2>
+            <img class="resposta__imagem" id="imagem" src="">
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
